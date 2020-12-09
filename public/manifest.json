@@ -1,18 +1,20 @@
 {
   "manifest_version": 2,
-  "name": "Extension Name",
+  "name": "Scrollmark",
   "version": "0.1",
-  "description": "Some Description",
+  "description": "Bookmark a specific part of a website acc to Scroll",
   "permissions": [
+    "tabs",
+    "activeTab",
+    "storage",
+    "*://*/*"
   ],
   "background": {
     "scripts": ["static/js/background.js"]
   },
   "content_scripts": [{
     "js": [ "static/js/content.js" ],
-    "matches": [
-      "http://*.example.com/*", "https://*.example.com/*"
-    ]
+    "matches": ["<all_urls>"]
   }],
   "icons": {
     "192": "logo192.png"
