@@ -1,10 +1,111 @@
 body {
-  margin: 0;
+  margin: 0px;
   height: 580px;
   width: 360px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.App {
+  font-size: 18px;
+}
+.appBar {
+  font-size: 28px;
+  text-align: center;
+}
+.appBar span {
+  margin: 10px 0;
+}
+.app-body {
+  padding: 5px;
+  text-align: center;
+}
+.app-body .btn {
+  text-transform: none !important;
+}
+.card-list {
+  height: 400px;
+  padding: 0px 5px;
+  overflow-y: auto;
+}
+.app-body .search-wrapper {
+  border-radius: 5px;
+  margin: 10px 20px;
+  border: 1px solid rgb(220, 0, 78);
+  font-size: 16px;
+  display: flex;
+}
+.app-body .search-wrapper .search-inp {
+  border: none;
+  height: 30px;
+  flex-grow: 99;
+  margin-right: 2px;
+}
+.app-body .search-wrapper .search-inp:focus {
+  border: none;
+  outline: none;
+}
+.search-wrapper .search-icon {
+  display: inline-flex;
+  vertical-align: middle;
+  padding: 0 5px;
+  color: #222;
+  padding-top:5px;
+}
+.card-list .card {
+  padding: 20px;
+  text-align: left;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+  font-size: 16px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  position: relative;
+}
+.card .delete-icon-wrapper {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  background-image: radial-gradient(#fff, #fffc, #fffa);
+}
+.card .delete-icon-wrapper .delete-icon {
+  color: red;
+  cursor: pointer;
+  transition: 0.1s all ease-in-out;
+}
+.card .delete-icon-wrapper .delete-icon:hover {
+  font-size: 28px;
+}
+.card .timestamp-wrapper {
+  position: absolute;
+  bottom: 2px;
+  font-size: 12px;
+  right: 2px;
+  /* background: radial-gradient(at top left, var(--light), var(--dark)); */
+}
+.card .card-url {
+  color: #283593;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/*-------Scrollbar-------*/
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
 }
